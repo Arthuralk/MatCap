@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resource_file type="MaterialShader" subresource_count="1" version="2.1" version_name="Godot Engine v2.1.stable.official">
+	<main_resource>
+		<dictionary name="_code" shared="false">
+			<string> "fragment" </string>
+			<string> "//MatCap to Godot By ArthurAlk, Copy and Paste it in Fragment&#000a;//This shader looks like blender matcap&#000a;&#000a;//Matcap texture&#000a;uniform texture MatCap;&#000a;&#000a;//here the magic happens&#000a;vec2 vN = NORMAL.xy/2+vec2(0.5,0.5);&#000a;vN.y = vN.y*(-1)+1;&#000a;&#000a;//This applies your MatCap to Model using the created UV&#000a;DIFFUSE = tex(MatCap,vN).rgb;" </string>
+			<string> "fragment_ofs" </string>
+			<int> 0 </int>
+			<string> "light" </string>
+			<string> "" </string>
+			<string> "light_ofs" </string>
+			<int> 0 </int>
+			<string> "vertex" </string>
+			<string> "//MatCap to Godot By ArthurAlk, Copy and Paste it in Vertex&#000a;uniform bool Fix_Back = true;&#000a;if (NORMAL.z&lt;0 &amp;&amp; Fix_Back)&#000a;&#0009;{&#000a;&#0009;NORMAL.z = 0;&#000a;&#0009;}" </string>
+			<string> "vertex_ofs" </string>
+			<int> 0 </int>
+		</dictionary>
+
+	</main_resource>
+</resource_file>

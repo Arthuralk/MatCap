@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resource_file type="ShaderMaterial" subresource_count="3" version="2.1" version_name="Godot Engine v2.1.stable.official">
+	<ext_resource path="res://Textures/GradeTeste.png" type="Texture" index="1"></ext_resource>
+	<ext_resource path="res://Shader_MatCap.xshd" type="Shader" index="0"></ext_resource>
+	<main_resource>
+		<bool name="flags/visible"> True </bool>
+		<bool name="flags/double_sided"> False </bool>
+		<bool name="flags/invert_faces"> False </bool>
+		<bool name="flags/unshaded"> False </bool>
+		<bool name="flags/on_top"> False </bool>
+		<bool name="flags/lightmap_on_uv2"> True </bool>
+		<bool name="flags/colarray_is_srgb"> False </bool>
+		<int name="params/blend_mode"> 0 </int>
+		<int name="params/depth_draw"> 1 </int>
+		<real name="params/line_width"> -0 </real>
+		<resource name="shader/shader" external="0">  </resource>
+		<bool name="shader_param/Fix_Back"> True </bool>
+		<resource name="shader_param/MatCap" external="1">  </resource>
+
+	</main_resource>
+</resource_file>
